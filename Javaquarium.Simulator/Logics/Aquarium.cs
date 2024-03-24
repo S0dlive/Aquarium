@@ -48,7 +48,7 @@ public static class Aquarium
                         }
                     }
                 }
-                if (fish is Herbivorous herbivorous)
+                /*if (fish is Herbivorous herbivorous)
                 {
                     bool isGood = false;
                     while (isGood == false)
@@ -61,17 +61,10 @@ public static class Aquarium
                         }
                         
                     }
-                    
-                    
-                }
+                }*/
             }
-            Console.WriteLine(entites);
             continue;
         }
-    }
-    public static void DeleteFish(Fish fish)
-    {
-        
     }
     
     public static void DeleteAlga(Alga alga)

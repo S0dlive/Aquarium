@@ -22,12 +22,25 @@ public class Program
                     break;
                 case "next" : 
                     Aquarium.NextTurn();
-                    Console.WriteLine(Aquarium.entites);
+                    Console.WriteLine(Aquarium.entites.Count);
+                    foreach (var entity in Aquarium.entites)
+                    {
+                        if (entity is Fish fish)
+                        {
+                            Console.WriteLine(fish);
+                        }
+                        else if (entity is Alga alga)
+                        {
+                            Console.WriteLine(alga);
+                        }
+                    }
                     break;
                 case "addFish" :
                     int t = int.Parse(Console.ReadLine());
                     AddFishs(t);
                     break;
+                
+                
             }
             
         }
